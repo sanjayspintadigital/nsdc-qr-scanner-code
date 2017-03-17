@@ -1,0 +1,55 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-backbutton": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-photo-library": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-save-image": {
+            "PACKAGE_NAME": "SmartAssessor"
+        }
+    },
+    "dependent_plugins": {
+        "org.apache.cordova.home": {
+            "PACKAGE_NAME": "SmartAssessor"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "SmartAssessor"
+        }
+    }
+}

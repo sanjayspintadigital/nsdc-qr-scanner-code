@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assessor APP</title>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <!-- <script src="dist/ng-cordova.min.js"></script> -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/crypto-js.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jlinq.js"></script>
+    <script src="js/jlinq.jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--<script src="js/testJSON.js"></script>-->
+    <!--<script src="js/new_JSON.js"></script>-->
+    <script src="js/networkEngine.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/validations.js"></script>
+    <script src="js/commonFunction.js"></script>
+    <script src="js/sync.js"></script>
+    <script src="js/dbEngine.js"></script>
+    <script src="js/urlGenerator.js"></script>
+    <!--<script src="js/UnitTestDBEngine.js"></script>-->
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link rel="stylesheet" href="stylev2.css">
+    <link href="lib/onsen/css/font/lato.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<ons-navigator id="myNavigator" page="splash.html"></ons-navigator>
+<ons-template id="splash.html">
+    <ons-page id="splashPage">
+        <div id="splashContainer">
+            <center style="
+    padding-top: 45%;
+"><img src="imgs/skill.png" id="">
+                <img src="imgs/smart-centre-bg.png" style="
+    width: 300px;
+" id="">
+            </center>
+
+            <div id="footer">
+                <p class="text" style="background-color: #0c1117;">©2017 Campus Management Corp | All Rights
+                    Reserved</p>
+            </div>
+        </div>
+
+    </ons-page>
+</ons-template>
+<div id="loadingSpinner">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    function fun_AllowOnlyAmountAndDot(txt) {
+        //console.log(event)
+        var value = txt.value;
+        console.log("value" + value);
+        if (value == "") txt.value = "";
+        //if(event.keyCode == 229) { return true }
+        if ((event.keyCode > 47 && event.keyCode < 58) || event.keyCode == 46 || event.keyCode == 190) {
+            if (value.length > 4) return false;
+            //if(value.indexOf(".") > 0 && value.split(".")[1].length == 2) return false
+            console.log("tru");
+            return true;
+        }
+        else {
+            console.log("doin");
+            //if(txt.value.length < value.length ) return true
+            console.log(txt.value);
+            if (isNaN(txt.value)) txt.value = value;
+            setTimeout(function (txt) {
+            }, 50);
+            event.keyCode = 0;
+            //alert("Only Numbers with dot allowed !!");
+            console.log("false");
+            return false;
+        }
+    }
+</script>
+<style>
+    .side-nav {
+        -webkit-transform: none !important;
+        transform: translateX(-105%);
+    }
+</style>
+<link rel="stylesheet" href="css/screensfixes.css">
+
+</html>

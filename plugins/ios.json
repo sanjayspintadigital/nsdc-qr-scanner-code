@@ -1,0 +1,35 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-backbutton": {
+            "PACKAGE_NAME": "com.nsdc.qrcodescanner"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.nsdc.qrcodescanner"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.nsdc.qrcodescanner"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.nsdc.qrcodescanner"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.nsdc.qrcodescanner"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.nsdc.qrcodescanner"
+        },
+        "org.apache.cordova.home": {
+            "PACKAGE_NAME": "com.nsdc.qrcodescanner"
+        }
+    }
+}
