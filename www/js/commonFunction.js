@@ -35,7 +35,6 @@ function scan() {
                             scan();
                         }
                     }
-
                     console.log(value);
                     console.log(value);
                     var s1 = value.split("Link:");
